@@ -13,7 +13,7 @@ public class HelloController {
 
     @GetMapping("/status")
         public String Status(){
-            return "Spring is working on Apache Tomcat server";
+            return "Spring is working on Apache Tomcat server port 8080";
         }
 
 
