@@ -1,0 +1,41 @@
+@startuml
+
+class Product {
+  -id: Long
+  -name: String
+  -price: double
+
+  +Product()
+  +Product(id: Long , name: String , price : double)
+
+  +getId() : Long
+  +getName() : String
+  +getPrice() : double
+}
+
+class Customer {
+-id: Long
+-name : String
+-email: String
+-address : Address
++Customer()
++Customer(id: Long , name: String ,email : String , address Address}
++getId() : Long
++getName() : String
+getEmail() : String
++getAddress() : Address
+}
+
+class Address {
+-street: String
+-city: String
+-postcode: String
++Address()
++Address(street: String , city: String, postcode: String)
++getStreet() : String
++getCity() : String
++getPostcode : String
+}
+
+Customer --> Address
+@enduml
